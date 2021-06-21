@@ -14,5 +14,5 @@
             <td>{{$mhs->alamat}}</td>
         </tr>
         @endforeach
-    </tbody>
+    </tbody> 
 </table>
