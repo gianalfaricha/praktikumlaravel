@@ -25,4 +25,7 @@ Route::get('/mahasiswa/{id}/edit', [App\Http\Controllers\MahasiswaController::cl
 Route::post('/mahasiswa/{id}/update', [App\Http\Controllers\MahasiswaController::class, 'update'])->name('mahasiswa');
 Route::get('/mahasiswa/delete/{id}', [App\Http\Controllers\MahasiswaController::class, 'delete'])->name('mahasiswa');
 Route::get('/mahasiswa/exportpdf', [App\Http\Controllers\MahasiswaController::class, 'exportPdf'])->name('mahasiswa');
+Route::get('auth/google', [App\Http\Controllers\GoogleController::class, 'redirectToGoogle'])->name('google.login');
+Route::get('auth/google/callback', [App\Http\Controllers\GoogleController::class, 'handleGoogleCallback'])->name('google.callback');
+
 

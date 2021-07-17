@@ -65,6 +65,11 @@
                             </div>
                         </div>
                     </form>
+                    <div class="social-auth-links text-center mt-2 mb-3">
+                        <a href="{{ route('google.login') }}" class="btn btn-danger">
+                            {{ __('Sign in using Google+') }}
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
